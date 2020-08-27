@@ -142,11 +142,10 @@ public static void main(String[] args) {
 However, it is important to note that your code should work for other values for attack, damage, HP, and names, and should behave accordingly.
 
 ## Part 2
-For this part, we’re going to write a simple Taylor series calculator within the `main` method of a new class, `TaylorSeries`.  The code will be similar to the example done during the lectures, but this time for <img src="https://render.githubusercontent.com/render/math?math=e^x">.  Use the same format as the in-class example (which is available in the GitHub repository), but use the following series for your approximation:
+For this part, we’re going to write a simple Taylor series calculator within the `main` method of a new class, `TaylorSeries` which will find an approximate value for <img src="https://render.githubusercontent.com/render/math?math=e^x">.  Use a variable `numIterations` to adjust the number of iterations (the number of terms summed).  Use the following series for your approximation:
 
 <img src="https://render.githubusercontent.com/render/math?math=e^x=\sum_{n=0}^\infty \frac{x^n}{n!}=\frac{x^0}{0!}+\frac{x^1}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{x^4}{4!}+...">
 
+Determine an appropriate number of iterations to get a reasonable approximation (e.g. to 5 accurate decimal places) for <img src="https://render.githubusercontent.com/render/math?math=e^1">.
 
-Determine an appropriate number of iterations to get a reasonable approximation for <img src="https://render.githubusercontent.com/render/math?math=e^1">.
-
-_**Hint:**  Our function for calculating the factorial of a number currently cannot handle 0!.  Either change this function so that it works properly, or else change the way you calculate your Taylor series accordingly._
+_**Hint:**  Our function for calculating the factorial of a number currently cannot handle 0!.  0! should be 1.  Either change this function so that it works properly, or else change the way you calculate your Taylor series accordingly._
