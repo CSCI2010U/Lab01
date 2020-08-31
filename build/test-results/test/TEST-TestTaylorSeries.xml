@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestTaylorSeries" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-31T14:30:41" hostname="DESKTOP-RR4I1PM" time="0.003">
+  <properties/>
+  <testcase name="testExp()" classname="TestTaylorSeries" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

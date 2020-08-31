@@ -28,13 +28,18 @@ _**Note:**  You are required to know how to compile and run a Java application f
 ## Part 1
 Now that we have the software that we need, let's write a simple program in Java.
 
-We'll create a Java class, called `Battle`.  `Battle` will have a `main` method, which will be provided, below.  Your job will be to simulate a simple battle between two RPG game “pocket monsters”: Chikapu and Zarichard by creating an instance of `Battle` and repeatedly invoking the `simulateRound` function until the either the function `isMonster1Fainted` returns `true` or the function `isMonster2Fainted` returns `true`.  The `simulateRound` function will simulate Chikapu attacking Zarichard, and then Zarichard attacking Chikapu.  The damage dealt by each attack is determined by the following formula:
+_**Note:** Do not modify any files in this repository, except for the following:_
+- `src/main/java/Lab01.java`
+- `src/main/java/Battle.java`
+- `src/main/java/TaylorSeries.java`
+
+We'll create a Java class, called `Battle`.  The `Battle` class can already be found in this repository (in `src/main/java`).  `Battle` will have a `main` method, which will be provided, below.  Your job will be to simulate a simple battle between two RPG game “pocket monsters”: Chikapu and Zarichard by creating an instance of `Battle` and repeatedly invoking the `simulateRound` function until the either the function `isMonster1Fainted` returns `true` or the function `isMonster2Fainted` returns `true`.  The `simulateRound` function will simulate Chikapu attacking Zarichard, and then Zarichard attacking Chikapu.  The damage dealt by each attack is determined by the following formula:
 
 `damage = attacker's attack – defender's defense`
 
 The `isMonster1Fainted` and `isMonster2Fainted` simply return true if the corresponding monster has HP <= 0.  Each of the instance variables should also have corresponding get methods (e.g. `getMonster1HP` and `getMonster2Attack`).
 
-Some code to initialize the two characters is given below:
+Some code, which is included in the `Lab01.java` file's `main` function in the respository, to initialize the two characters is given below:
 
 ```
 String chikapuName = "Chikapu";
@@ -48,14 +53,6 @@ float zarichardDefense = 12.5f;
 float zarichardHP = 200f;
 ```
 These values will be passed to the `Battle` class' constructor, which will be stored as instance variables.  There will also be an instance variable (`round_num`), which will store the round number.
-
-To compile your class, use the following command:
-
-`javac Battle.java`
-
-To run your program, use the following command:
-
-`java Battle`
 
 Sample output, using the values given above, is shown below:
 
@@ -142,10 +139,43 @@ public static void main(String[] args) {
 However, it is important to note that your code should work for other values for attack, damage, HP, and names, and should behave accordingly.
 
 ## Part 2
-For this part, we’re going to write a simple Taylor series calculator within the `main` method of a new class, `TaylorSeries` which will find an approximate value for <img src="https://render.githubusercontent.com/render/math?math=e^x">.  Use a variable `numIterations` to adjust the number of iterations (the number of terms summed).  Use the following series for your approximation:
+For this part, we’re going to write a simple Taylor series calculator within a static method `approximateExp` of a new class, `TaylorSeries` which will find an approximate value for <img src="https://render.githubusercontent.com/render/math?math=e^x">.  The `TaylorSeries` class can already be found in this repository (in `src/main/java`).  Use an argument `numIterations` to adjust the number of iterations (the number of terms summed).  Use the following series for your approximation:
 
 <img src="https://render.githubusercontent.com/render/math?math=e^x=\sum_{n=0}^\infty \frac{x^n}{n!}=\frac{x^0}{0!}+\frac{x^1}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{x^4}{4!}+...">
 
-Determine an appropriate number of iterations to get a reasonable approximation (e.g. to 5 accurate decimal places) for <img src="https://render.githubusercontent.com/render/math?math=e^1">.
+You will implement the `approximateExp` function by calling another two functions, which you will also implement:
+- `factorial(int n)` - calculates n!, using recursion
+- `pow(int x, int n)` - calculates <img src="https://render.githubusercontent.com/render/math?math=x^n"> (x to the power of n) using recursion 
 
-_**Hint:**  Our function for calculating the factorial of a number currently cannot handle 0!.  0! should be 1.  Either change this function so that it works properly, or else change the way you calculate your Taylor series accordingly._
+Determine an appropriate number of iterations to get a reasonable approximation (e.g. to 5 accurate decimal places) for <img src="https://render.githubusercontent.com/render/math?math=e^1">, and print out that approximation in your `main` method.
+
+_**Hint:**  The recursive function developed in class for calculating the factorial of a number currently cannot handle 0!.  0! should be 1.  Either change this function so that it works properly, or else change the way you calculate your Taylor series accordingly._
+
+## Compiling and Running Your Program
+To compile and run your program, use the following command:
+`gradle run`
+
+If you want to see if your program passes the tests, i.e. is correct, use the following command:
+`gradle test`
+
+## Submission Instructions
+Modify the `src/main/java/Battle.java` and `src/main/java/TaylorSeries.java` as described in this document, and commit and push your code to this repository.
+
+Every lab assignment is due by the start of the following lab period, giving you an extra week to work on it.  Do not expect to continue to work on it during this next lab period, as the lab instructor will not permit that, since it would lead to you missing potential instructions/help for the next lab.
+
+This repository will be marked by the lab instructor at their convenience, but any changes made to this repository after the due date (described above) will not be considered.  Labs not submitted on time, with the exception of documented absences/illnesses or SAS accommodations, will not be accepted.
+
+## Getting Help
+If you run into difficulty, you may wish to check out some of the following resources:
+- https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html - A series of tutorials for the Java programming language, focusing almost entirely on the features of Java
+- https://docs.oracle.com/en/java/javase/14/ - The standard documentation for Java classes, including methods that you can use, some of which will be discussed later in this course
+- http://stackoverflow.com/ - A forum for asking questions about programming. Chances are, someone else has asked the same question as you have, and some knowledgeable person has already answered it.  This might be a good time to use the ‘site:’ feature in Google!
+
+Of course, you can always ask the lab instructor for help! However, learning how to find the answers out for yourself is a skill that will pay off in the future, as solving your own problem is immediate (and satisfying)!
+
+## Academic Integrity
+Discussing strategies with your fellow students is acceptable, but once it is time to write the code you should do so on your own.  The instructor has learning goals planned for this course which are cumulative.  If you fail to learn some elements in this lab assignment, it most likely will affect your performance on higher-stakes assessments in the future.  You can also ask the lab instructor for help, but they won't directly solve your problems for you, but will rather point you in the right direction to find the solution yourself.
+
+Lab assignments which have been plagiarized will receive a mark of zero, and both the student whose work was copied, and the student who copied the work will have an academic integrity report filed.
+
+By submitting code to this repository, you are claiming that this work is your own.
