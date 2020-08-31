@@ -11,6 +11,13 @@ You can download and install the OpenJDK package from the following locations:
 
 Note:  Oracle has recently determined that University use of the official Oracle Java JDK is considered commercial use, and requires a large subscription fee (per student).  This would be wasteful of University resources, when a similar (and in some ways, better) implementation of Java is available in the OpenJDK.  Students are asked not to use Oracle's commercially-licensed JDK package, but rather Oracle’s open-source licensed Open JDK.
 
+### Gradle
+The GitHub Classroom environment uses the Gradle build tool for its Java projects.  This means that the project directory needs to have a specific structure, as you'll see if you examine the contents of this repository.  The code for all of your labs will be found in `src/main/java`.  Instructions on how to run your program are given later in this document.
+
+In order to use the `gradle` commands given, you will need to install Gradle.  You can complete your labs without it, but once installed, it does make the process significantly easier.  As a bonus, I've created unit tests for every lab that will verify that your code is correct, so you can be certain that your lab assignment will be given full marks if it passes all of these tests.
+
+Instructions for installing Gradle can be found here:  https://gradle.org/install/
+
 ### Text Editor
 You should also install a text editor.  This is very personal, and you are welcome to use any text editor that you wish, but it is advisable to choose a text editor that has syntax highlighting for Java.  Some popular text editors include:
 •	Atom:  		http://atom.io 
