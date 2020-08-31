@@ -20,15 +20,15 @@ Instructions for installing Gradle can be found here:  https://gradle.org/instal
 
 ### Text Editor
 You should also install a text editor.  This is very personal, and you are welcome to use any text editor that you wish, but it is advisable to choose a text editor that has syntax highlighting for Java.  Some popular text editors include:
-•	Atom:  		http://atom.io 
-•	Brackets:	http://brackets.io 
-•	VS Code:	https://code.visualstudio.com/download  
-•	Sublime:	https://www.sublimetext.com/ (not free)
+- Atom:  	http://atom.io 
+- Brackets:	http://brackets.io 
+- VS Code:	https://code.visualstudio.com/download  
+- Sublime:	https://www.sublimetext.com/ (not free)
 
 You can also install an integrated development environment, if you prefer to compile in the same application.  Some popular Java IDEs include:
-•	IntelliJ IDEA:	https://www.jetbrains.com/idea/download/ 
-•	Eclipse:		https://eclipse.org/downloads/ 
-•	NetBeans:	https://netbeans.org/ 
+- IntelliJ IDEA:	https://www.jetbrains.com/idea/download/ 
+- Eclipse:		    https://eclipse.org/downloads/ 
+- NetBeans:	        https://netbeans.org/ 
 
 _**Note:**  You are required to know how to compile and run a Java application from the command line in this course, even if you regularly use an IDE._
 
