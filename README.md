@@ -148,7 +148,7 @@ However, it is important to note that your code should work for other values for
 ## Part 2
 For this part, we’re going to write a simple Taylor series calculator within a static method `approximateExp` of a new class, `TaylorSeries` which will find an approximate value for <img src="https://render.githubusercontent.com/render/math?math=e^x">.  The `TaylorSeries` class can already be found in this repository (in `src/main/java`).  Use an argument `numIterations` to adjust the number of iterations (the number of terms summed).  Use the following series for your approximation:
 
-<img src="https://render.githubusercontent.com/render/math?math=e^x=\sum_{n=0}^\infty \frac{x^n}{n!}=\frac{x^0}{0!}+\frac{x^1}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{x^4}{4!}+...">
+<img src="https://render.githubusercontent.com/render/math?math=e^x=\sum_{n=0}^\infty \frac{x^n}{n!}=\frac{x^0}{0!} + \frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + ...">
 
 You will implement the `approximateExp` function by calling another two functions, which you will also implement:
 - `factorial(int n)` - calculates n!, using recursion
