@@ -148,7 +148,11 @@ However, it is important to note that your code should work for other values for
 ## Part 2
 For this part, we’re going to write a simple Taylor series calculator within a static method `approximateExp` of a new class, `TaylorSeries` which will find an approximate value for <img src="https://render.githubusercontent.com/render/math?math=e^x">.  The `TaylorSeries` class can already be found in this repository (in `src/main/java`).  Use an argument `numIterations` to adjust the number of iterations (the number of terms summed).  Use the following series for your approximation:
 
-<img src="https://render.githubusercontent.com/render/math?math=e^x=\sum_{n=0}^\infty \frac{x^n}{n!}=\frac{x^0}{0!} + \frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + ...">
+<!-- e%5Ex%3D%5Csum_%7Bn%3D0%7D%5E%5Cinfty+%5Cfrac%7Bx%5En%7D%7Bn%21%7D%3D%5Cfrac%7Bx%5E0%7D%7B0%21%7D%2B%5Cfrac%7Bx%5E1%7D%7B1%21%7D%2B%5Cfrac%7Bx%5E2%7D%7B2%21%7D%2B%5Cfrac%7Bx%5E3%7D%7B3%21%7D%2B%5Cfrac%7Bx%5E4%7D%7B4%21%7D%2B... -->
+
+<!-- e^x=\sum_{n=0}^\infty \frac{x^n}{n!}=\frac{x^0}{0!}%20+%20\frac{x^1}{1!}%20+\frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + ... -->
+
+<img src="https://render.githubusercontent.com/render/math?math=e%5Ex%3D%5Csum_%7Bn%3D0%7D%5E%5Cinfty+%5Cfrac%7Bx%5En%7D%7Bn%21%7D%3D%5Cfrac%7Bx%5E0%7D%7B0%21%7D%2B%5Cfrac%7Bx%5E1%7D%7B1%21%7D%2B%5Cfrac%7Bx%5E2%7D%7B2%21%7D%2B%5Cfrac%7Bx%5E3%7D%7B3%21%7D%2B%5Cfrac%7Bx%5E4%7D%7B4%21%7D%2B...">
 
 You will implement the `approximateExp` function by calling another two functions, which you will also implement:
 - `factorial(int n)` - calculates n!, using recursion
