@@ -41,10 +41,10 @@ public class Lab01 {
 			battle2.simulateRound();
 		}
 
-		if (battle.isMonster1Dead()) {
-			System.out.printf("\n%s has fainted!\n", battle.getMonster1Name());
+		if (battle2.isMonster1Dead()) {
+			System.out.printf("\n%s has fainted!\n", battle2.getMonster1Name());
 		} else {
-			System.out.printf("\n%s has fainted!\n", battle.getMonster2Name());
+			System.out.printf("\n%s has fainted!\n", battle2.getMonster2Name());
 		}
 
 		// part 2
