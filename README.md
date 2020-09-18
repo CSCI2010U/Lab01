@@ -6,8 +6,8 @@ For the first part of this lab, you will install some software that we will use 
 First, we need to install the Java OpenJDK.  This package includes the compiler, the interpreter/JVM, and the libraries used by Java.
 
 Windows, Linux, and OS-X Users:
-You can download and install the OpenJDK package from the following locations: 
-•	https://jdk.java.net/14/ 
+You can download and install the OpenJDK package from the following locations:
+•	https://jdk.java.net/14/
 
 Note:  Oracle has recently determined that University use of the official Oracle Java JDK is considered commercial use, and requires a large subscription fee (per student).  This would be wasteful of University resources, when a similar (and in some ways, better) implementation of Java is available in the OpenJDK.  Students are asked not to use Oracle's commercially-licensed JDK package, but rather Oracle’s open-source licensed Open JDK.
 
@@ -20,15 +20,15 @@ Instructions for installing Gradle can be found here:  https://gradle.org/instal
 
 ### Text Editor
 You should also install a text editor.  This is very personal, and you are welcome to use any text editor that you wish, but it is advisable to choose a text editor that has syntax highlighting for Java.  Some popular text editors include:
-- Atom:  	http://atom.io 
-- Brackets:	http://brackets.io 
+- Atom:  	http://atom.io
+- Brackets:	http://brackets.io
 - VS Code:	https://code.visualstudio.com/download  
 - Sublime:	https://www.sublimetext.com/ (not free)
 
 You can also install an integrated development environment, if you prefer to compile in the same application.  Some popular Java IDEs include:
-- IntelliJ IDEA:	https://www.jetbrains.com/idea/download/ 
-- Eclipse:		    https://eclipse.org/downloads/ 
-- NetBeans:	        https://netbeans.org/ 
+- IntelliJ IDEA:	https://www.jetbrains.com/idea/download/
+- Eclipse:		    https://eclipse.org/downloads/
+- NetBeans:	        https://netbeans.org/
 
 _**Note:**  You are required to know how to compile and run a Java application from the command line in this course, even if you regularly use an IDE._
 
@@ -129,7 +129,7 @@ public static void main(String[] args) {
     float zarichardDefense = 12.5f;
     float zarichardHP = 200f;
 
-    Battle battle = new Battle(chikapuName, chikapuAttack, chikapuDefense, chikapuHP, 
+    Battle battle = new Battle(chikapuName, chikapuAttack, chikapuDefense, chikapuHP,
                                zarichardName, zarichardAttack, zarichardDefense, zarichardHP);
 
     while (!battle.isMonster1Dead() && !battle.isMonster2Dead()) {
@@ -156,7 +156,7 @@ For this part, we’re going to write a simple Taylor series calculator within a
 
 You will implement the `approximateExp` function by calling another two functions, which you will also implement:
 - `factorial(int n)` - calculates n!, using recursion
-- `pow(int x, int n)` - calculates <img src="https://render.githubusercontent.com/render/math?math=x^n"> (x to the power of n) using recursion 
+- `pow(int x, int n)` - calculates <img src="https://render.githubusercontent.com/render/math?math=x^n"> (x to the power of n) using recursion
 
 Determine an appropriate number of iterations to get a reasonable approximation (e.g. to 5 accurate decimal places) for <img src="https://render.githubusercontent.com/render/math?math=e^1">, and print out that approximation in your `main` method.
 
@@ -175,6 +175,8 @@ Modify the `src/main/java/Battle.java` and `src/main/java/TaylorSeries.java` as 
 Every lab assignment is due by the start of the following lab period, giving you an extra week to work on it.  Do not expect to continue to work on it during this next lab period, as the lab instructor will not permit that, since it would lead to you missing potential instructions/help for the next lab.
 
 This repository will be marked by the lab instructor at their convenience, but any changes made to this repository after the due date (described above) will not be considered.  Labs not submitted on time, with the exception of documented absences/illnesses or SAS accommodations, will not be accepted.
+
+**Note:**  Each lab is due by the _beginning_ of your next lab period.
 
 ## Getting Help
 If you run into difficulty, you may wish to check out some of the following resources:
