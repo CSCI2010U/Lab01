@@ -24,8 +24,8 @@ public class TestBattle {
     }
 
     assertTrue(battle.isMonster2Dead(), "Test 1, Zarichard did not faint.");
-    assertEquals(battle.getMonster1HP(), 160, "Test 1, Chikapu's HP does not match.");
-    assertEquals(battle.getMonster2HP(), -8, "Test 1, Zarichard's HP does not match.");
+    assertEquals(battle.getMonster1HP(), 160, 0.1, "Test 1, Chikapu's HP does not match.");
+    assertEquals(battle.getMonster2HP(), -8, 0.1, "Test 1, Zarichard's HP does not match.");
 
     // Test #2
     chikapuName = "Chikapu";
@@ -45,8 +45,8 @@ public class TestBattle {
       battle2.simulateRound();
     }
 
-    assertTrue(battle2.isMonster1Dead(), "Test 2, Chikapu did not faint.");
-    assertEquals(battle2.getMonster1HP(), -10, "Test 2, Chikapu's HP does not match.");
-    assertEquals(battle2.getMonster2HP(), 170, "Test 2, Zarichard's HP does not match.");
+    assertTrue(battle2.isMonster1Dead(), "Test 2, Zarichard did not faint.");
+    assertEquals(battle2.getMonster1HP(), -10, 0.1, "Test 2, Chikapu's HP does not match.");
+    assertEquals(battle2.getMonster2HP(), 170, 0.1, "Test 2, Zarichard's HP does not match.");
   }
 }
